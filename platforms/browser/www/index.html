@@ -31,11 +31,29 @@
         </div>
       </ons-toolbar>
       <p style="text-align: center">
-        <ons-button onclick="sayHello()" style="background-color: tomato"
-          >Ciao!</ons-button
+        <ons-button onclick="showAlert()" style="background-color: tomato"
+          >Alert!</ons-button
+        >
+      </p>
+      <p style="text-align: center">
+        <ons-button onclick="showToast()" style="background-color:blue"
+          >Toast!</ons-button
+        >
+      </p>
+      <p style="text-align: center">
+        <ons-button
+          onclick="showConfirm()"
+          style="background-color:cornflowerblue"
+          >Confirm?</ons-button
+        >
+      </p>
+      <p style="text-align: center">
+        <ons-button onclick="showPrompt()" style="background-color:darkgreen"
+          >Prompt</ons-button
         >
       </p>
     </ons-page>
+    <!-- ons-page is container -->
     <script type="text/javascript" src="cordova.js"></script>
     <!-- cordova.js must have so that can insert plug in -->
     <script src="app.js"></script>
